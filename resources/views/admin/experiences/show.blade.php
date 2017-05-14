@@ -5,10 +5,10 @@
   <div class="col-md-8 col-md-offset-2">
 
     <div class="well well-lg">
-      <h1>{{strtoupper($experience->company_name)}}</h1>
+      <h3>{{strtoupper($experience->company_name)}}</h3>
       <div class="row">
         <div class="col-md-8">
-          <h3>Description: {{$experience->role}}</h3>
+          <p>Description: {{$experience->role}}</p>
         </div>
         <div class="col-md-2 col-md-offset-2">
           <a href="#">

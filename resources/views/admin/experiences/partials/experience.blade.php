@@ -1,6 +1,6 @@
 <div class="panel panel-default col-md-8 col-md-offset-2">
   <div class="panel-heading">
-      <span class="lead"> {{strtoupper($experience->company_name)}}</span>
+      <span> {{strtoupper($experience->company_name)}}</span>
       <span class="pull-right">
 
         @include('admin.experiences.partials.form.delete')
@@ -13,9 +13,9 @@
       </span>
   </div>
   <div class="panel-body">
-    <h4>Role: {{$experience->role}}</h4>
-    <h4>Start Date: {{$experience->start_date}}</h4>
-    <h4>End Date: {{$experience->end_date}}</h4>
+    <p>Role: {{$experience->role}}</p>
+    <p>Start Date: {{$experience->start_date}}</p>
+    <p>End Date: {{$experience->end_date}}</p>
 
 
   </div>
