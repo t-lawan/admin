@@ -1,0 +1,51 @@
+
+// Fonts
+
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  padding-top: 70px;
+  background-color: #1c1c1c;
+  font-family: 'VT323', monospace;
+}
+
+#admin_link{
+  color:#1c1c1c;
+}
+
+.icon-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+
+.navbar {
+    padding-top: 15px;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+      background-color: #1c1c1c;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav  li a:hover {
+    color: #fff !important;
+}
