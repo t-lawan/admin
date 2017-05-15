@@ -19,6 +19,8 @@ class CreateProjectsTable extends Migration
           $table->integer('user_id')->unsigned();
           $table->string('name', 20);
           $table->text('description');
+          $table->string('user_email', 30);
+          $table->string('user_password');
           $table->text('github_link');
           $table->text('site_link');
           $table->timestamps();
