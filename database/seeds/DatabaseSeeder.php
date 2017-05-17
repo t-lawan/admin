@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    protected $toTruncate = array('users', 'projects', 'institutions', 'experiences', 'duties', 'subjects');
+    protected $toTruncate = array('users', 'projects', 'institutions', 'experiences', 'duties', 'subjects','technologies');
     /**
      * Run the database seeds.
      *
@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
       $this->call(ExperiencesTableSeeder::class);
       $this->call(DutiesTableSeeder::class);
       $this->call(SubjectsTableSeeder::class);
+      $this->call(TechnologiesTableSeeder::class);
     }
 }

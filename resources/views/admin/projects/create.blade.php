@@ -5,7 +5,7 @@
 
 
 
-    <form method="post" action="#" class="col-md-6 col-md-offset-3">
+    <form method="post" action="/project/create" class="col-md-6 col-md-offset-3">
 
 
       @include('admin.projects.partials.form.create')

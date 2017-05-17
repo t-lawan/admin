@@ -9,96 +9,63 @@ class DutiesTableSeeder extends Seeder
      *
      * @return void
      */
+     protected $streamamgDuties = array(
+       'Providing training and technical support to both prospective and current clients',
+       'Assisting sales department with technical presentations (i.e first line of technical support/queries and providing product demos)',
+       'Maintaining and updating product manuals and video walkthroughs',
+       'Managing live stream events',
+       'Gathering technical specifications for events from the clients and relaying this information to the production technicians and development team if needed',
+       'Creating microsites for live events',
+       'Attending marketing events to promote products',
+       'Managing and updating client accounts',
+       'Carrying out market research',
+       'Writing email newsletters to clients',
+       'Assisting with product development',
+       'Testing software updates and new product releases');
+
+      protected $isotrolDuties = array(
+        'Preparing market research reports',
+        'Working in a team to produce technical reports',
+        'Contacting renewable energy companies to arrange meetings with potential clients to prospect for new business',
+        'Preparing bids for external projects');
+
+      protected $panDuties = array(
+        'Researching and designing various methods for waste disposal project',
+        'Presenting Research findings at Manager’s meeting',
+        'Organising Health and Safety awareness events',
+        'Working with external audit committee',
+        'Conducting, collating and presenting data for bi- weekly safety checks',
+        'Basic Administrative Duties'
+      );
+
+
+
     public function run()
     {
         //
-        DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Providing training and technical support on the two main platforms to clients',
-]);
+        foreach ($this->streamamgDuties as $streamDuty)
+        {
+          DB::table('duties')->insert([
+            'experience_id' => 1,
+            'description' => $streamDuty,
+          ]);
+        }
 
-DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Assisting sales on new pitches with product demos and provide first line of technical support',
-]);
+        foreach ($this->isotrolDuties as $isotrolDuty)
+        {
+          DB::table('duties')->insert([
+            'experience_id' => 2,
+            'description' => $isotrolDuty,
+          ]);
+        }
 
-DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Maintain and update product manuals and video walkthroughs',
-]);
+        foreach ($this->panDuties as $panDuty)
+        {
+          DB::table('duties')->insert([
+            'experience_id' => 3,
+            'description' => $panDuty,
+          ]);
+        }
 
-DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Manage and update client accounts ',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Assist with product development',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 1,
-'description' => 'Product testing',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 2,
-'description' => 'Preparing market research reports',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 2,
-'description' => 'Working in a team to produce technical reports
-',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 2,
-'description' => 'Contacting renewable energy companies to arrange meetings with potential clients to prospect for new business;
-',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 2,
-'description' => 'Preparing bids for external projects',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Researching and designing various methods for waste disposal project.',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Presenting Research findings at Manager’s meeting',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Organising Health and Safety awareness events',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Researching and designing various methods for waste disposal project',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Working with external audit committee
-',
-]);
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Conducting, collating and presenting data for bi- weekly safety checks',
-]);
-
-
-DB::table('duties')->insert([
-'experience_id' => 3,
-'description' => 'Basic Administrative Duties',
-]);
     }
 }
